@@ -1,2 +1,2 @@
 # grapsules
-E(d) equivariant graph-based capsules
+E(d) equivariant geometric capsules
