@@ -14,7 +14,7 @@ if __name__ == "__main__":
                         help='number of epochs')
     parser.add_argument('--batch_size', type=int, default=128,
                         help='Batch size. Does not scale with number of gpus.')
-    parser.add_argument('--lr', type=float, default=5e-4,
+    parser.add_argument('--lr', type=float, default=1e-4,
                         help='learning rate')
     parser.add_argument('--weight_decay', type=float, default=1e-8,
                         help='weight decay')
@@ -130,3 +130,4 @@ if __name__ == "__main__":
                          gradient_clip_val=0.5)
     trainer.fit(model, dataloaders['train'], dataloaders['valid'])
     trainer.test(model, dataloaders['test'])
+
